@@ -1,0 +1,26 @@
+<form (submit)="salvar($event)">
+    <div>
+            <label>Nome</label>
+            <input type="text" name="nome" [(ngModel)]="usuario.nomUsuario" />
+    </div>
+    <div>
+            <label>Login</label>
+            <input type="login" name="login" [(ngModel)]="usuario.desLogin" />
+    </div>
+    <div>
+            <label>Senha</label>
+            <input type="text" name="senha" [(ngModel)]="usuario.desSenha" />
+    </div>
+    <div>
+            <label>Código</label>
+            <input type="text" name="codigo" [(ngModel)]="usuario.codCliente" />
+    </div>
+    <div>
+            <label>Lingua</label>
+            <input type="text" name="lingua" [(ngModel)]="usuario.codLingua" />
+    </div>
+    <div>
+        <button type="submit" >Salvar</button>
+    </div>
+    
+</form>

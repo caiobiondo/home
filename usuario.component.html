@@ -1,0 +1,33 @@
+<div align="center">
+  <table border="1">
+    <tr>
+      <th>
+        Nome
+      </th>
+      <th>
+        Login
+      </th>
+      <th>
+        E-mail
+      </th>
+    </tr>
+    <tr *ngFor="let usuario of usuario.data">
+      <td>
+        {{usuario.nomUsuario}}
+      </td>
+      <td>
+        {{usuario.desLogin}}
+      </td>
+      <td>
+        {{usuario.desEmail}}
+      </td>
+      <td>
+        {{usuario.codUsuario}}
+      </td>
+    </tr>
+  </table>
+</div>
+
+<button routerLink="add">
+  Add
+</button>
